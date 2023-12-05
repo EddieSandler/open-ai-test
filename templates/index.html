@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recursion Poem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .poem {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .poem p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="poem">
+        {% for line in msg.content.split('\n') %}
+            <p>{{ line }}</p>
+        {% endfor %}
+    </div>
+    <!-- You can add more HTML elements or styles as needed -->
+</body>
+</html>
